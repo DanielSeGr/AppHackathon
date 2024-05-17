@@ -10,6 +10,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+ //AQUI ESCRIBIO MILLAN
     }
     // ESTA ES UNA PRUEBA PARA VER FUNCION GIT
 }
