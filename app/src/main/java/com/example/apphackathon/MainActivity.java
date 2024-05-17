@@ -2,16 +2,28 @@ package com.example.apphackathon;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button btnGoToOptions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
- //AQUI ESCRIBIO MILLAN
+        btnGoToOptions = findViewById(R.id.Boton_ruido);
+        btnGoToOptions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Sonido.class);
+                startActivity(intent);
+            }
+        });
     }
     // ESTA ES UNA PRUEBA PARA VER FUNCION GIT
 }
